@@ -20,7 +20,13 @@ import {
   Eye,
   Settings,
   X,
-  Image as ImageIcon
+  Image as ImageIcon,
+  MessageCircle,
+  Send as SendIcon,
+  Video,
+  Heart,
+  Share2,
+  Camera
 } from "lucide-react";
 
 interface Platform {
@@ -32,11 +38,17 @@ interface Platform {
 }
 
 const platforms: Platform[] = [
-  { id: "twitter", name: "Twitter/X", icon: Twitter, color: "bg-blue-500", connected: false },
-  { id: "facebook", name: "Facebook", icon: Facebook, color: "bg-blue-600", connected: false },
+  { id: "whatsapp", name: "WhatsApp", icon: MessageCircle, color: "bg-green-500", connected: false },
   { id: "instagram", name: "Instagram", icon: Instagram, color: "bg-pink-500", connected: false },
-  { id: "linkedin", name: "LinkedIn", icon: Linkedin, color: "bg-blue-700", connected: false },
   { id: "youtube", name: "YouTube", icon: Youtube, color: "bg-red-500", connected: false },
+  { id: "twitter", name: "X (Twitter)", icon: Twitter, color: "bg-black", connected: false },
+  { id: "linkedin", name: "LinkedIn", icon: Linkedin, color: "bg-blue-700", connected: false },
+  { id: "telegram", name: "Telegram", icon: SendIcon, color: "bg-blue-400", connected: false },
+  { id: "moj", name: "Moj", icon: Video, color: "bg-purple-500", connected: false },
+  { id: "pinterest", name: "Pinterest", icon: Heart, color: "bg-red-600", connected: false },
+  { id: "dailymotion", name: "DailyMotion", icon: Share2, color: "bg-orange-500", connected: false },
+  { id: "snapchat", name: "Snapchat", icon: Camera, color: "bg-yellow-500", connected: false },
+  { id: "facebook", name: "Facebook", icon: Facebook, color: "bg-blue-600", connected: false },
 ];
 
 export default function Home() {
